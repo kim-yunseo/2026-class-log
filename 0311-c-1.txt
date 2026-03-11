@@ -1,0 +1,23 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+char name[50];
+int  day;
+float money; // float(4바이트) double(8바이트)
+char grade;
+printf("이름을 입력하세요"); //f는 서식
+scanf ("%s",name); // 문자열일때 name자체가 주소, 문자열-> 2개이상의 글자
+printf("여행 일수를 입력하세요");
+scanf("%d",&day); //scanf-> 키보드로 입력 &-> 주소를 나타내기위해
+printf("여행 경비를 입력하세요");
+scanf("%f",&money);
+printf("여행 등급을 입력하세요");
+scanf(" %c",&grade); // 엔터 입력을 막기위해 한칸 띄기
+printf("이름:%s 여행 일수: %10d 여행 경비:%.1f 여행 등급:%c",name,day,money,grade);
+// %f->소수점 6자리, %.nf-> 소수점 n자리만큼
+// %5.1f -> 전체 세자리에 소수이하 한자리
+// %10d -> 오른쪽 정렬 나머지는 공백
+    return 0;
+}
