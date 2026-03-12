@@ -1,0 +1,20 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    int num;
+    printf("숫자를 입력해주세요");
+    scanf("%d",&num);
+    //조건문
+    if(num%2==0) //if 뒤에 세미클론을 넣지않음
+    {                   // 2문장 이상 실행 할 때 중괄호
+        printf("짝수\n"); //if -> 참일 때 수행
+        printf("2로 나눈 나머지가 0\n");
+    }
+    else
+    {printf("홀수\n"); //if -> 거짓일 때 수행
+    printf("2로 나눈 나머지가 1\n");}
+
+    return 0;
+}
