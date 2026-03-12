@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+    char blood;
+    printf("혈액형 입력(A,B,O):");
+    scanf("%c",&blood);
+    
+    //조건문 suitch ~case
+    switch(blood)
+    {
+        case 'A':                    // case ~:
+            printf("A형입니다\n");
+            break;                    //중괄호 필요없음
+        case 'B':                    //문자가 하나일 땐 작은 따움표
+            printf("B형입니다\n");
+            break;
+        case 'O':
+            printf("O형입니다\n");
+            break;
+        default:                      //case에 없을 때
+            printf("입력오류\n");
+            break;
+    }
+    
+
+    return 0;
+}
