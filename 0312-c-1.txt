@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+    int sub;
+    while(1) //0->거짓 1->참, while은 참일 때 반복
+    {          //무한반복
+    printf("숫자를 입력하세요.");
+    scanf("%d",&sub);
+    if (sub==10)
+    {printf("'정답입니다'\n");
+    break;} //탈출
+    else if (sub>10) //첫번째 이후 if
+    printf("'너무 높아요'\n");
+    else
+    printf("'너무 낮아요'\n");
+    }
+
+    return 0;
+}
