@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main()
+{
+    int num1,num2;
+    char op;
+    int sum,sub;
+    int mul;
+    double divi;
+    printf("첫번째 숫자를 입력하세요");
+    scanf("%d",&num1);
+    printf("연산자 입력 (+-*/): ");
+    scanf(" %c",&op);
+    printf("두번째 숫자를 입력하세요");
+    scanf("%d",&num2);
+    switch(op)
+    {
+        case '+':
+            sum=num1+num2;
+            printf("덧셈결과:%d\n",sum);
+            break;
+        case '-':
+            sub=num1-num2;
+            printf("뺄셈결과:%d\n",sub);
+            break;
+        case '*':
+            mul=num1*num2;
+            printf("곱셈결과:%d\n",mul);
+            break;
+        case '/':
+            divi=(double)num1/num2; //정수와 정수로 계산하면 정수가 나오기 때문에
+            printf("나눗셈결과:%.2f\n",divi);//둘 중 하나를 실수로 바꾼다
+            break;
+        default:
+            printf("입력오류\n");
+            break;
+    }
+    return 0;
+} // (추가) case ~: case~: 는 같은 결과
