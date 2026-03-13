@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+    int menu;
+    printf("[1:치킨 2:피자 3:떡볶이 4:햄버거 5~7:랜덤]: ");
+    scanf("%d",&menu);
+    if(menu==1)
+        printf("치킨");
+    else if(menu==2)
+        printf("피자");
+    else if(menu==3)
+        printf("떡볶이");
+    else if(menu==4)
+        printf("햄버거");
+    else if(menu>=5 && menu<=7) //왼쪽부터 계산하기 때문에 &&로 연결, 교집합
+        printf("랜덤");
+    else
+        printf("입력오류");
+
+    return 0;
+}
